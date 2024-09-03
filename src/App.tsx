@@ -5,6 +5,10 @@ import Ex32ColorList from './Exercises3/Ex32ColorList';
 import Ex32bColorList2 from './Exercises3/Ex32bColorList2';
 import Ex34ContactList from './Exercises3/Ex34ContactList';
 import Ex41ConsoleButton from './Exercises4/Ex41ConsoleButton';
+import Ex42ConsoleButton from './Exercises4/Ex42ConsoleButton';
+import Ex43AlertButton from './Exercises4/Ex43AlertButton';
+import Ex44AlertButton from './Exercises4/Ex44AlertButton';
+import Ex45GeneralButton from './Exercises4/Ex45GeneralButton';
 
 function Hello() {
   return <h1>Hello World</h1>
@@ -37,10 +41,18 @@ function App() {
     }
   ];
 
+  function generalButtonWillExecuteThis() {
+    console.log('It works! Yay general button');
+  }
+
   return (
     <>
+      <Ex45GeneralButton buttonText="This is General Button" buttonAction={ generalButtonWillExecuteThis }  />
+      <Ex44AlertButton alertText="Test alert text" />
+      <Ex43AlertButton />
+      <Ex42ConsoleButton consoleText="Hello from App.tsx" />
       <Ex41ConsoleButton />
-
+    
       <Ex34ContactList contacts={ persons } />
 
       <Ex32bColorList2 colors={someArrayOfColors}/>
