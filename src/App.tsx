@@ -4,6 +4,7 @@ import Greeter from './Greeter'
 import Ex32ColorList from './Exercises3/Ex32ColorList';
 import Ex32bColorList2 from './Exercises3/Ex32bColorList2';
 import Ex34ContactList from './Exercises3/Ex34ContactList';
+import Ex41ConsoleButton from './Exercises4/Ex41ConsoleButton';
 
 function Hello() {
   return <h1>Hello World</h1>
@@ -38,6 +39,8 @@ function App() {
 
   return (
     <>
+      <Ex41ConsoleButton />
+
       <Ex34ContactList contacts={ persons } />
 
       <Ex32bColorList2 colors={someArrayOfColors}/>

@@ -17,6 +17,7 @@ export default function Ex34ContactList({ contacts }) {
     for(let i = 0; i < contacts.length; i++) {
         output.push(
             <Ex33ContactItem 
+                key={i}
                 name={ contacts[i].name } 
                 address={ contacts[i].address } 
             />

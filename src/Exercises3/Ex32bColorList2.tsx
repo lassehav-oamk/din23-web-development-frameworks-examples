@@ -10,7 +10,7 @@ export default function Ex32bColorList2({ colors }) {
     let output = [];
     for(let i = 0; i < colors.length; i++)
     {
-        output.push(<li>{colors[i]}</li>);
+        output.push(<li key={i}>{colors[i]}</li>);
     }
 
     return (
