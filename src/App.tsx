@@ -9,6 +9,9 @@ import Ex42ConsoleButton from './Exercises4/Ex42ConsoleButton';
 import Ex43AlertButton from './Exercises4/Ex43AlertButton';
 import Ex44AlertButton from './Exercises4/Ex44AlertButton';
 import Ex45GeneralButton from './Exercises4/Ex45GeneralButton';
+import Ex52ClickCounter from './Exercises5/Ex52ClickCounter';
+import Ex51TextInputReader from './Exercises5/Ex51TextInputReader';
+import Ex54ParagraphToggle from './Exercises5/Ex54ParagraphToggle';
 
 function Hello() {
   return <h1>Hello World</h1>
@@ -47,6 +50,9 @@ function App() {
 
   return (
     <>
+      <Ex54ParagraphToggle />
+      <Ex51TextInputReader />
+      <Ex52ClickCounter />
       <Ex45GeneralButton buttonText="This is General Button" buttonAction={ generalButtonWillExecuteThis }  />
       <Ex44AlertButton alertText="Test alert text" />
       <Ex43AlertButton />
