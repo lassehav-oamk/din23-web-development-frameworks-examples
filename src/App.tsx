@@ -12,6 +12,7 @@ import Ex45GeneralButton from './Exercises4/Ex45GeneralButton';
 import Ex52ClickCounter from './Exercises5/Ex52ClickCounter';
 import Ex51TextInputReader from './Exercises5/Ex51TextInputReader';
 import Ex54ParagraphToggle from './Exercises5/Ex54ParagraphToggle';
+import Ex56ThreeFieldForm from './Exercises5/Ex56ThreeFieldForm';
 
 function Hello() {
   return <h1>Hello World</h1>
@@ -50,6 +51,7 @@ function App() {
 
   return (
     <>
+      <Ex56ThreeFieldForm />
       <Ex54ParagraphToggle />
       <Ex51TextInputReader />
       <Ex52ClickCounter />
