@@ -22,7 +22,7 @@ export default function Form( { saveButtonClicked } ) {
     }
 
     function handleSaveButtonClick() {
-        saveButtonClicked();
+        saveButtonClicked(firstName, familyName, email);
     }
 
     return (
