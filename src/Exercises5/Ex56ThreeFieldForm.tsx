@@ -3,26 +3,10 @@ import Form from './Ex56components/Form'
 import SaveSuccess from './Ex56components/SaveSuccess';
 
 export default function Ex56ThreeFieldForm() {
-
     const [firstName, setFirstName] = useState("");
     const [familyName, setFamilyName] = useState("");
     const [email, setEmail] = useState("");
     const [dataSaved, setDataSaved] = useState(false);
-
-    function handleFirstNameChange(event) {
-        console.log(event.target.value);
-        setFirstName(event.target.value);
-    }
-
-    function handleFamilyNameChange(event) {
-        console.log(event.target.value);
-        setFamilyName(event.target.value);
-    }
-
-    function handleEmailChange(event) {
-        console.log(event.target.value);
-        setEmail(event.target.value);
-    }
 
     function saveButtonClicked(firstName, familyName, email) {
         console.log('click');
