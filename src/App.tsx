@@ -14,6 +14,7 @@ import Ex51TextInputReader from './Exercises5/Ex51TextInputReader';
 import Ex54ParagraphToggle from './Exercises5/Ex54ParagraphToggle';
 import Ex56ThreeFieldForm from './Exercises5/Ex56ThreeFieldForm';
 import Ex510ClickCounterLiftedState from './Exercises5/Ex510ClickCounterLiftedState';
+import Ex71ImageAsset from './Exercises7/Ex71ImageAsset';
 
 function Hello() {
   return <h1>Hello World</h1>
@@ -52,6 +53,7 @@ function App() {
 
   return (
     <>
+      <Ex71ImageAsset />
       <Ex510ClickCounterLiftedState />
       <Ex56ThreeFieldForm />
       <Ex54ParagraphToggle />
