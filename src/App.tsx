@@ -16,6 +16,8 @@ import Ex56ThreeFieldForm from './Exercises5/Ex56ThreeFieldForm';
 import Ex510ClickCounterLiftedState from './Exercises5/Ex510ClickCounterLiftedState';
 import Ex71ImageAsset from './Exercises7/Ex71ImageAsset';
 import Ex72Menu from './Exercises7/Ex72Menu';
+import TestButton from './TSButton';
+import Ex61RestaurantMenu from './Exercises6/Ex61RestaurantMenu';
 
 
 function Hello() {
@@ -55,6 +57,8 @@ function App() {
 
   return (
     <>
+      <Ex61RestaurantMenu />
+      <TestButton label={2}/>
       <Ex72Menu />
       <Ex71ImageAsset />
       <Ex510ClickCounterLiftedState />
