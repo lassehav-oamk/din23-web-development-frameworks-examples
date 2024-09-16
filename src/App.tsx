@@ -18,6 +18,10 @@ import Ex71ImageAsset from './Exercises7/Ex71ImageAsset';
 import Ex72Menu from './Exercises7/Ex72Menu';
 import TestButton from './TSButton';
 import Ex61RestaurantMenu from './Exercises6/Ex61RestaurantMenu';
+import UserName from './TypeScriptExercises/UserName';
+import UserNameSingleProp from './TypeScriptExercises/UserNameSingleProp';
+import UserNameExternallyTyped from './TypeScriptExercises/UserNameExternallyTyped';
+import { UserData } from './TypeScriptExercises/UserNameTypes'
 
 
 function Hello() {
@@ -55,8 +59,18 @@ function App() {
     console.log('It works! Yay general button');
   }
 
+
+  const batmanInfo : UserData = {
+    firstName: 'Bruce',
+    lastName: 'Wayne',
+    age: 40
+  }
+
   return (
-    <>            
+    <>       
+      <UserNameExternallyTyped userData={batmanInfo}/>     
+      <UserNameSingleProp userData={{ firstName: "Clark", lastName: "Kent", age: 35}}/>
+      <UserName firstName={"John"} lastName="Doe" age={25}/>
       <Ex72Menu />
       <Ex71ImageAsset />
       <Ex510ClickCounterLiftedState />
