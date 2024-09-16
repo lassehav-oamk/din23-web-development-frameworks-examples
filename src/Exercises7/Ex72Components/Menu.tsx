@@ -21,6 +21,8 @@ export default function Menu({ menuData }) {
         { name: 'Double Cheese', price: 7}
     ];
 
+    
+
     return (
         <div>
             <h1>Menu</h1>

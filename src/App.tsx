@@ -56,9 +56,7 @@ function App() {
   }
 
   return (
-    <>
-      <Ex61RestaurantMenu />
-      <TestButton label={2}/>
+    <>            
       <Ex72Menu />
       <Ex71ImageAsset />
       <Ex510ClickCounterLiftedState />
