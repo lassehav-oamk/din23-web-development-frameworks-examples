@@ -69,6 +69,7 @@ function App() {
 
   return (
     <>       
+      <Ex61RestaurantMenu />
       <RouterDemo />
       <UserNameExternallyTyped userData={batmanInfo}/>     
       <UserNameSingleProp userData={{ firstName: "Clark", lastName: "Kent", age: 35}}/>

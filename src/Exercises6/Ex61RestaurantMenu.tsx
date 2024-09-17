@@ -1,12 +1,29 @@
-import React from 'react'
-import MenuDrinks from './Ex61Components/MenuDrinks'
-import MenuMainCourses from './Ex61Components/MenuMainCourses'
-import { BrowserRouter, RouterProvider, Routes, Route, Link } from "react-router-dom";
+import MenuCategory from './Ex61Components/MenuCategory'
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import classes from './Ex61RestaurantMenu.module.css'
 
-
-
 export default function Ex61RestaurantMenu() {
+
+  const drinks = [{
+    name: 'CocaCola',
+    price: 2
+  },
+  {
+    name: 'Water',
+    price: 1
+  },
+  {
+    name: 'Beer',
+    price: 3
+  }
+  ]
+
+  const mainCourses =[
+    {
+      name: 'Fried Rice',
+      price: 10
+    }
+  ];
 
   return (
     <BrowserRouter>
@@ -18,8 +35,8 @@ export default function Ex61RestaurantMenu() {
           </div>
       </div>
       <Routes>
-        <Route path="/" element={<MenuDrinks />} />
-        <Route path="/main-courses" element={<MenuMainCourses />} />
+        <Route path="/" element={<MenuCategory menuItems={drinks}/>} />
+        <Route path="/main-courses" element={<MenuCategory menuItems={mainCourses} />} />
       </Routes>
         
     </BrowserRouter>
