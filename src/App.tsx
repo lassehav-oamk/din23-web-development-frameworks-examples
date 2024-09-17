@@ -22,6 +22,7 @@ import UserName from './TypeScriptExercises/UserName';
 import UserNameSingleProp from './TypeScriptExercises/UserNameSingleProp';
 import UserNameExternallyTyped from './TypeScriptExercises/UserNameExternallyTyped';
 import { UserData } from './TypeScriptExercises/UserNameTypes'
+import RouterDemo from './RouterDemo/RouterDemo';
 
 
 function Hello() {
@@ -68,6 +69,7 @@ function App() {
 
   return (
     <>       
+      <RouterDemo />
       <UserNameExternallyTyped userData={batmanInfo}/>     
       <UserNameSingleProp userData={{ firstName: "Clark", lastName: "Kent", age: 35}}/>
       <UserName firstName={"John"} lastName="Doe" age={25}/>
