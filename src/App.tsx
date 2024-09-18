@@ -23,6 +23,8 @@ import UserNameSingleProp from './TypeScriptExercises/UserNameSingleProp';
 import UserNameExternallyTyped from './TypeScriptExercises/UserNameExternallyTyped';
 import { UserData } from './TypeScriptExercises/UserNameTypes'
 import RouterDemo from './RouterDemo/RouterDemo';
+import Ex81MapDemo from './Exercises8/Ex81MapDemo';
+import Ex82DynamicBookList from './Exercises8/Ex82DynamicBookList';
 
 
 function Hello() {
@@ -68,7 +70,9 @@ function App() {
   }
 
   return (
-    <>       
+    <>    
+      <Ex82DynamicBookList />
+      <Ex81MapDemo books={['Book A', 'Book B', 'Book C']} />   
       <Ex61RestaurantMenu />
       <RouterDemo />
       <UserNameExternallyTyped userData={batmanInfo}/>     
