@@ -16,7 +16,6 @@ import Ex56ThreeFieldForm from './Exercises5/Ex56ThreeFieldForm';
 import Ex510ClickCounterLiftedState from './Exercises5/Ex510ClickCounterLiftedState';
 import Ex71ImageAsset from './Exercises7/Ex71ImageAsset';
 import Ex72Menu from './Exercises7/Ex72Menu';
-import TestButton from './TSButton';
 import Ex61RestaurantMenu from './Exercises6/Ex61RestaurantMenu';
 import UserName from './TypeScriptExercises/UserName';
 import UserNameSingleProp from './TypeScriptExercises/UserNameSingleProp';
@@ -25,6 +24,9 @@ import { UserData } from './TypeScriptExercises/UserNameTypes'
 import RouterDemo from './RouterDemo/RouterDemo';
 import Ex81MapDemo from './Exercises8/Ex81MapDemo';
 import Ex82DynamicBookList from './Exercises8/Ex82DynamicBookList';
+import Ex92UncontrolledForm from './Exercises9/Ex92UncontrolledForm';
+import Ex83DynamicBookList from './Exercises8/Ex83FilteringBookList';
+import Ex91ControlledForm from './Exercises9/Ex91ControlledForm';
 
 
 function Hello() {
@@ -71,6 +73,9 @@ function App() {
 
   return (
     <>    
+      <Ex92UncontrolledForm />
+      <Ex91ControlledForm />
+      <Ex83DynamicBookList />
       <Ex82DynamicBookList />
       <Ex81MapDemo books={['Book A', 'Book B', 'Book C']} />   
       <Ex61RestaurantMenu />
