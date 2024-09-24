@@ -27,6 +27,7 @@ import Ex82DynamicBookList from './Exercises8/Ex82DynamicBookList';
 import Ex92UncontrolledForm from './Exercises9/Ex92UncontrolledForm';
 import Ex83DynamicBookList from './Exercises8/Ex83FilteringBookList';
 import Ex91ControlledForm from './Exercises9/Ex91ControlledForm';
+import TestDemoComponent from './testDemo/TestDemoComponent';
 
 
 function Hello() {
@@ -73,6 +74,7 @@ function App() {
 
   return (
     <>    
+      <TestDemoComponent message="Hello from App.tsx" />
       <Ex92UncontrolledForm />
       <Ex91ControlledForm />
       <Ex83DynamicBookList />
