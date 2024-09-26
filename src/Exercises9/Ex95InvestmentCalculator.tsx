@@ -29,13 +29,13 @@ export default function Ex95InvestmentCalculator() {
 
     // Next step use the data from the form fields and calculate the investment data
     let newInvestmentData : InvestmentYearData[] = [];
+    let valueBeforeAnnualContribution = initialInvestment;
     for(let i = 0; i < duration; i++) {
-      // calculate the values
-      let valueBeforeAnnualContribution = initialInvestment;
+      // calculate the values      
       let savedTotalValue = initialInvestment + (annualContribution * (i + 1));
       let annualReturn = valueBeforeAnnualContribution * (returnRate / 100);
 
-      let totalInvestmentValue = savedTotalValue + annualReturn;
+      let totalInvestmentValue = valueBeforeAnnualContribution + annualReturn + annualContribution;
 
       // create a new object for each year
       let investmentYearResults = {
@@ -45,11 +45,14 @@ export default function Ex95InvestmentCalculator() {
         totalInvestmentValue: totalInvestmentValue
       };
 
+      valueBeforeAnnualContribution = totalInvestmentValue;
+
       // add the object to the investmentData array
-      investmentData.push(investmentYearResults);
+      newInvestmentData.push(investmentYearResults);
     }
 
-    console.log(investmentData)
+    console.log(newInvestmentData)
+    setInvestmentData(newInvestmentData);
 
   }
 
