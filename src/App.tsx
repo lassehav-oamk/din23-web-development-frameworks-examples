@@ -29,6 +29,8 @@ import Ex83DynamicBookList from './Exercises8/Ex83FilteringBookList';
 import Ex91ControlledForm from './Exercises9/Ex91ControlledForm';
 import TestDemoComponent from './testDemo/TestDemoComponent';
 import Ex95InvestmentCalculator from './Exercises9/Ex95InvestmentCalculator';
+import LifeCycleDemo from './lifeCycleDemo/LifeCycleDemo';
+import APIAccessDemo from './useEffectDemo/APIAccessDemo';
 
 
 function Hello() {
@@ -75,6 +77,9 @@ function App() {
 
   return (
     <>    
+      <APIAccessDemo /> 
+      <LifeCycleDemo />
+
       <Ex95InvestmentCalculator />
       
       <Ex92UncontrolledForm />
