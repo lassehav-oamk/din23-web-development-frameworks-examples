@@ -31,6 +31,7 @@ import TestDemoComponent from './testDemo/TestDemoComponent';
 import Ex95InvestmentCalculator from './Exercises9/Ex95InvestmentCalculator';
 import LifeCycleDemo from './lifeCycleDemo/LifeCycleDemo';
 import APIAccessDemo from './useEffectDemo/APIAccessDemo';
+import Ex101QuoteFetcher from './Exercises10/Ex101QuoteFetcher';
 
 
 function Hello() {
@@ -77,7 +78,7 @@ function App() {
 
   return (
     <>    
-      <APIAccessDemo /> 
+      <Ex101QuoteFetcher />
       <LifeCycleDemo />
 
       <Ex95InvestmentCalculator />
