@@ -32,6 +32,7 @@ import Ex95InvestmentCalculator from './Exercises9/Ex95InvestmentCalculator';
 import LifeCycleDemo from './lifeCycleDemo/LifeCycleDemo';
 import APIAccessDemo from './useEffectDemo/APIAccessDemo';
 import Ex101QuoteFetcher from './Exercises10/Ex101QuoteFetcher';
+import Ex102UserListFilter from './Exercises10/Ex102UserListFilter';
 
 
 function Hello() {
@@ -78,6 +79,8 @@ function App() {
 
   return (
     <>    
+      <Ex102UserListFilter />
+
       <Ex101QuoteFetcher />
       <LifeCycleDemo />
 
